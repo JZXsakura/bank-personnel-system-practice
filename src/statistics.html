@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Staff System - Статистика</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">B</div>
+      <div>
+        <strong>Bank Staff</strong>
+        <span>HR system</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html">Главная</a>
+      <a href="employees.html">Сотрудники</a>
+      <a href="departments.html">Подразделения</a>
+      <a href="employee-card.html">Карточка сотрудника</a>
+      <a href="statistics.html" class="active">Статистика</a>
+      <a href="../site/index.html">Сайт проекта</a>
+    </nav>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Отчеты и аналитика</p>
+        <h1>Статистика по персоналу</h1>
+      </div>
+
+      <div class="user-panel">
+        <span class="user-role">HR-специалист</span>
+        <div class="user-avatar">HR</div>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span class="stat-label">Всего сотрудников</span>
+        <strong>128</strong>
+        <p>Общее количество сотрудников банка</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Работают</span>
+        <strong>96</strong>
+        <p>Сотрудники с активным статусом</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">В отпуске</span>
+        <strong>14</strong>
+        <p>Сотрудники в ежегодном отпуске</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Новые сотрудники</span>
+        <strong>7</strong>
+        <p>Приняты в текущем месяце</p>
+      </article>
+    </section>
+
+    <section class="statistics-layout">
+      <article class="page-panel">
+        <div class="panel-header">
+          <div>
+            <h2>Распределение по подразделениям</h2>
+            <p>Количество сотрудников в основных отделах банка</p>
+          </div>
+        </div>
+
+        <div class="bar-list">
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Кредитный отдел</span>
+              <strong>34</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>IT-отдел</span>
+              <strong>27</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 79%;"></div>
+            </div>
+          </div>
+
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Финансовый отдел</span>
+              <strong>21</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 62%;"></div>
+            </div>
+          </div>
+
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Отдел рисков</span>
+              <strong>18</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 53%;"></div>
+            </div>
+          </div>
+
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>Служба безопасности</span>
+              <strong>16</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 47%;"></div>
+            </div>
+          </div>
+
+          <div class="bar-item">
+            <div class="bar-info">
+              <span>HR-отдел</span>
+              <strong>12</strong>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 35%;"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page-panel">
+        <div class="panel-header">
+          <div>
+            <h2>Кадровые статусы</h2>
+            <p>Текущее состояние сотрудников</p>
+          </div>
+        </div>
+
+        <div class="status-stat-list">
+          <div class="status-stat">
+            <span class="status-dot green"></span>
+            <div>
+              <strong>Работает</strong>
+              <p>96 сотрудников</p>
+            </div>
+          </div>
+
+          <div class="status-stat">
+            <span class="status-dot blue"></span>
+            <div>
+              <strong>В отпуске</strong>
+              <p>14 сотрудников</p>
+            </div>
+          </div>
+
+          <div class="status-stat">
+            <span class="status-dot orange"></span>
+            <div>
+              <strong>На больничном</strong>
+              <p>6 сотрудников</p>
+            </div>
+          </div>
+
+          <div class="status-stat">
+            <span class="status-dot purple"></span>
+            <div>
+              <strong>В командировке</strong>
+              <p>2 сотрудника</p>
+            </div>
+          </div>
+
+          <div class="status-stat">
+            <span class="status-dot gray"></span>
+            <div>
+              <strong>Уволен</strong>
+              <p>10 сотрудников</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="page-panel">
+      <div class="panel-header">
+        <div>
+          <h2>Сводный отчет</h2>
+          <p>Пример отчета, который может использоваться HR-отделом</p>
+        </div>
+
+        <button class="primary-action" type="button">Сформировать отчет</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="employees-table">
+          <thead>
+            <tr>
+              <th>Показатель</th>
+              <th>Значение</th>
+              <th>Комментарий</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Общая численность</strong></td>
+              <td>128</td>
+              <td>Все сотрудники, учитываемые в системе</td>
+            </tr>
+
+            <tr>
+              <td><strong>Активные сотрудники</strong></td>
+              <td>96</td>
+              <td>Сотрудники со статусом «Работает»</td>
+            </tr>
+
+            <tr>
+              <td><strong>Сотрудники в отпуске</strong></td>
+              <td>14</td>
+              <td>Ежегодный оплачиваемый отпуск</td>
+            </tr>
+
+            <tr>
+              <td><strong>Сотрудники на больничном</strong></td>
+              <td>6</td>
+              <td>Временная нетрудоспособность</td>
+            </tr>
+
+            <tr>
+              <td><strong>Новые сотрудники</strong></td>
+              <td>7</td>
+              <td>Приняты за текущий месяц</td>
+            </tr>
+
+            <tr>
+              <td><strong>Количество подразделений</strong></td>
+              <td>6</td>
+              <td>Основные отделы банка</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

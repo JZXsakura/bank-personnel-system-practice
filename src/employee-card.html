@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Staff System - Карточка сотрудника</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">B</div>
+      <div>
+        <strong>Bank Staff</strong>
+        <span>HR system</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html">Главная</a>
+      <a href="employees.html">Сотрудники</a>
+      <a href="departments.html">Подразделения</a>
+      <a href="employee-card.html" class="active">Карточка сотрудника</a>
+      <a href="statistics.html">Статистика</a>
+      <a href="../site/index.html">Сайт проекта</a>
+    </nav>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Личное дело</p>
+        <h1>Карточка сотрудника</h1>
+      </div>
+
+      <div class="user-panel">
+        <span class="user-role">HR-специалист</span>
+        <div class="user-avatar">HR</div>
+      </div>
+    </header>
+
+    <section class="employee-profile">
+      <div class="profile-header">
+        <div class="profile-main">
+          <div class="profile-avatar">ИИ</div>
+
+          <div>
+            <p class="eyebrow">Табельный номер 1001</p>
+            <h2>Иванов Иван Иванович</h2>
+            <p>Менеджер по работе с клиентами</p>
+
+            <div class="profile-tags">
+              <span class="employee-status status-working">Работает</span>
+              <span class="tag-light">Кредитный отдел</span>
+              <span class="tag-light">Центральный офис</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="primary-action" type="button">Редактировать</button>
+          <a href="employees.html" class="secondary-link">Назад к списку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-grid">
+      <article class="profile-card">
+        <h2>Основная информация</h2>
+
+        <div class="info-list">
+          <div>
+            <span>Дата рождения</span>
+            <strong>14.03.1992</strong>
+          </div>
+
+          <div>
+            <span>Дата приёма</span>
+            <strong>01.09.2020</strong>
+          </div>
+
+          <div>
+            <span>Стаж работы</span>
+            <strong>4 года 9 месяцев</strong>
+          </div>
+
+          <div>
+            <span>Подразделение</span>
+            <strong>Кредитный отдел</strong>
+          </div>
+
+          <div>
+            <span>Должность</span>
+            <strong>Менеджер по работе с клиентами</strong>
+          </div>
+
+          <div>
+            <span>Руководитель</span>
+            <strong>Петрова Анна Сергеевна</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <h2>Контакты</h2>
+
+        <div class="info-list">
+          <div>
+            <span>Телефон</span>
+            <strong>+7 (900) 123-45-67</strong>
+          </div>
+
+          <div>
+            <span>Email</span>
+            <strong>ivanov.i@bank.local</strong>
+          </div>
+
+          <div>
+            <span>Город</span>
+            <strong>Москва</strong>
+          </div>
+
+          <div>
+            <span>Рабочее место</span>
+            <strong>Офис 3, кабинет 214</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <h2>Кадровые данные</h2>
+
+        <div class="info-list">
+          <div>
+            <span>Статус сотрудника</span>
+            <strong>Работает</strong>
+          </div>
+
+          <div>
+            <span>Тип занятости</span>
+            <strong>Полная занятость</strong>
+          </div>
+
+          <div>
+            <span>График работы</span>
+            <strong>5/2</strong>
+          </div>
+
+          <div>
+            <span>Последнее кадровое событие</span>
+            <strong>Повышение квалификации</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="profile-card">
+        <h2>Проверка службы безопасности</h2>
+
+        <div class="security-box success">
+          <strong>Проверка пройдена</strong>
+          <p>
+            Сотрудник допущен к работе с банковскими информационными системами
+            в рамках своей должности.
+          </p>
+        </div>
+
+        <div class="info-list compact">
+          <div>
+            <span>Дата проверки</span>
+            <strong>25.08.2020</strong>
+          </div>
+
+          <div>
+            <span>Уровень доступа</span>
+            <strong>Стандартный</strong>
+          </div>
+
+          <div>
+            <span>Ответственный</span>
+            <strong>Служба безопасности</strong>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="profile-card wide-profile-card">
+      <div class="panel-header">
+        <div>
+          <h2>История кадровых событий</h2>
+          <p>Основные изменения в личном деле сотрудника</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">01.09.2020</span>
+          <div>
+            <strong>Приём на работу</strong>
+            <p>Сотрудник принят на должность менеджера по работе с клиентами.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">15.04.2022</span>
+          <div>
+            <strong>Повышение квалификации</strong>
+            <p>Пройден внутренний курс по работе с корпоративными клиентами.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">10.11.2023</span>
+          <div>
+            <strong>Изменение уровня доступа</strong>
+            <p>Выдан доступ к дополнительному модулю кредитной системы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
