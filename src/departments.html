@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Staff System - Подразделения</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">B</div>
+      <div>
+        <strong>Bank Staff</strong>
+        <span>HR system</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html">Главная</a>
+      <a href="employees.html">Сотрудники</a>
+      <a href="departments.html" class="active">Подразделения</a>
+      <a href="employee-card.html">Карточка сотрудника</a>
+      <a href="statistics.html">Статистика</a>
+      <a href="../site/index.html">Сайт проекта</a>
+    </nav>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Структура банка</p>
+        <h1>Подразделения</h1>
+      </div>
+
+      <div class="user-panel">
+        <span class="user-role">HR-специалист</span>
+        <div class="user-avatar">HR</div>
+      </div>
+    </header>
+
+    <section class="page-panel">
+      <div class="panel-header">
+        <div>
+          <h2>Подразделения банка</h2>
+          <p>
+            Раздел отображает основные отделы банка, количество сотрудников
+            и краткое описание их функций.
+          </p>
+        </div>
+
+        <button class="primary-action" type="button">Добавить подразделение</button>
+      </div>
+
+      <div class="departments-grid">
+
+        <article class="department-card">
+          <div class="department-icon">👥</div>
+          <div class="department-content">
+            <h2>HR-отдел</h2>
+            <p>
+              Отвечает за подбор, оформление, учет сотрудников, кадровое сопровождение
+              и ведение личных дел.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>12</strong></span>
+              <span>Руководитель: <strong>Кузнецова М.А.</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="department-card">
+          <div class="department-icon">💳</div>
+          <div class="department-content">
+            <h2>Кредитный отдел</h2>
+            <p>
+              Занимается обработкой заявок на кредиты, работой с клиентами
+              и сопровождением кредитных продуктов банка.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>34</strong></span>
+              <span>Руководитель: <strong>Иванов И.И.</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="department-card">
+          <div class="department-icon">📊</div>
+          <div class="department-content">
+            <h2>Отдел рисков</h2>
+            <p>
+              Анализирует финансовые, кредитные и операционные риски,
+              а также готовит рекомендации для руководства банка.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>18</strong></span>
+              <span>Руководитель: <strong>Петрова А.С.</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="department-card">
+          <div class="department-icon">💻</div>
+          <div class="department-content">
+            <h2>IT-отдел</h2>
+            <p>
+              Обеспечивает работу информационных систем банка, внутренней сети,
+              баз данных и пользовательских сервисов.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>27</strong></span>
+              <span>Руководитель: <strong>Сидоров П.О.</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="department-card">
+          <div class="department-icon">💰</div>
+          <div class="department-content">
+            <h2>Финансовый отдел</h2>
+            <p>
+              Отвечает за финансовый учет, бюджетирование, внутреннюю отчетность
+              и контроль денежных показателей.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>21</strong></span>
+              <span>Руководитель: <strong>Смирнов Д.А.</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="department-card">
+          <div class="department-icon">🛡️</div>
+          <div class="department-content">
+            <h2>Служба безопасности</h2>
+            <p>
+              Проводит проверки сотрудников, контролирует доступ к внутренним системам
+              и участвует в защите банковской информации.
+            </p>
+
+            <div class="department-meta">
+              <span>Сотрудников: <strong>16</strong></span>
+              <span>Руководитель: <strong>Орлова Е.В.</strong></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="page-panel">
+      <div class="panel-header">
+        <div>
+          <h2>Сводная таблица подразделений</h2>
+          <p>Краткая информация по основным отделам банка</p>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="employees-table">
+          <thead>
+            <tr>
+              <th>Код отдела</th>
+              <th>Название</th>
+              <th>Количество сотрудников</th>
+              <th>Руководитель</th>
+              <th>Тип подразделения</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HR-01</td>
+              <td><strong>HR-отдел</strong></td>
+              <td>12</td>
+              <td>Кузнецова М.А.</td>
+              <td>Внутренний отдел</td>
+            </tr>
+
+            <tr>
+              <td>CR-02</td>
+              <td><strong>Кредитный отдел</strong></td>
+              <td>34</td>
+              <td>Иванов И.И.</td>
+              <td>Клиентское подразделение</td>
+            </tr>
+
+            <tr>
+              <td>RS-03</td>
+              <td><strong>Отдел рисков</strong></td>
+              <td>18</td>
+              <td>Петрова А.С.</td>
+              <td>Аналитический отдел</td>
+            </tr>
+
+            <tr>
+              <td>IT-04</td>
+              <td><strong>IT-отдел</strong></td>
+              <td>27</td>
+              <td>Сидоров П.О.</td>
+              <td>Технический отдел</td>
+            </tr>
+
+            <tr>
+              <td>FN-05</td>
+              <td><strong>Финансовый отдел</strong></td>
+              <td>21</td>
+              <td>Смирнов Д.А.</td>
+              <td>Финансовый контроль</td>
+            </tr>
+
+            <tr>
+              <td>SB-06</td>
+              <td><strong>Служба безопасности</strong></td>
+              <td>16</td>
+              <td>Орлова Е.В.</td>
+              <td>Контроль и безопасность</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

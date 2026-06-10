@@ -731,3 +731,71 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.department-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px;
+  transition: 0.2s;
+}
+
+.department-card:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  transform: translateY(-2px);
+}
+
+.department-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #dbeafe;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.department-content h2 {
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.department-content p {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.department-meta {
+  display: grid;
+  gap: 8px;
+}
+
+.department-meta span {
+  color: #475569;
+  font-size: 14px;
+}
+
+.department-meta strong {
+  color: #1e40af;
+}
+
+@media (max-width: 1000px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-card {
+    grid-template-columns: 1fr;
+  }
+}
