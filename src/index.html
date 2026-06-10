@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Staff System — Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">B</div>
+      <div>
+        <strong>Bank Staff</strong>
+        <span>HR system</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="employees.html">Сотрудники</a>
+      <a href="departments.html">Подразделения</a>
+      <a href="employee-card.html">Карточка сотрудника</a>
+      <a href="statistics.html">Статистика</a>
+      <a href="../site/index.html">Сайт проекта</a>
+    </nav>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Информационная система</p>
+        <h1>Учет персонала банка</h1>
+      </div>
+
+      <div class="user-panel">
+        <span class="user-role">HR-специалист</span>
+        <div class="user-avatar">HR</div>
+      </div>
+    </header>
+
+    <section class="welcome-card">
+      <div>
+        <p class="eyebrow">Главная панель</p>
+        <h2>Добро пожаловать в прототип системы</h2>
+        <p>
+          Система предназначена для хранения данных о сотрудниках банка,
+          учета подразделений, просмотра кадровых статусов и формирования
+          статистики для HR-отдела.
+        </p>
+      </div>
+
+      <a href="employees.html" class="primary-button">Перейти к сотрудникам</a>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span class="stat-label">Всего сотрудников</span>
+        <strong>128</strong>
+        <p>В центральном офисе и подразделениях</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Подразделений</span>
+        <strong>6</strong>
+        <p>Основные отделы банка</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">В отпуске</span>
+        <strong>14</strong>
+        <p>Сотрудники с активным статусом отпуска</p>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Новые сотрудники</span>
+        <strong>7</strong>
+        <p>Приняты в текущем месяце</p>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Основные разделы</h2>
+          <span>Навигация</span>
+        </div>
+
+        <div class="quick-actions">
+          <a href="employees.html">
+            <strong>Сотрудники</strong>
+            <span>Просмотр таблицы сотрудников, поиск и фильтрация</span>
+          </a>
+
+          <a href="departments.html">
+            <strong>Подразделения</strong>
+            <span>Список отделов банка и количество сотрудников</span>
+          </a>
+
+          <a href="employee-card.html">
+            <strong>Карточка сотрудника</strong>
+            <span>Подробная информация о выбранном сотруднике</span>
+          </a>
+
+          <a href="statistics.html">
+            <strong>Статистика</strong>
+            <span>Сводные показатели по персоналу банка</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Кадровые статусы</h2>
+          <span>Демо-данные</span>
+        </div>
+
+        <div class="status-list">
+          <div>
+            <span class="status-dot green"></span>
+            <p>Работает</p>
+            <strong>96</strong>
+          </div>
+
+          <div>
+            <span class="status-dot blue"></span>
+            <p>В отпуске</p>
+            <strong>14</strong>
+          </div>
+
+          <div>
+            <span class="status-dot orange"></span>
+            <p>На больничном</p>
+            <strong>6</strong>
+          </div>
+
+          <div>
+            <span class="status-dot gray"></span>
+            <p>Уволен</p>
+            <strong>12</strong>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
