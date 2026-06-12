@@ -55,7 +55,6 @@ bank-personnel-system-practice/
 │
 ├── reports/
 ├── images/
-├── video/
 ├── README.md
 └── index.html
 ```
