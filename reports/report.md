@@ -342,5 +342,5 @@
 
 4\. [https://doka\.guide/](https://doka.guide/) \- Дока Guide
 
-5\. [https://github\.com/JZXsakura/bank\-personnel\-system\-practice/tree/main/docs](https://github.com/JZXsakura/bank-personnel-system-practice/tree/main/docs) \- репозиторий на GitHub
+5\. https://github\.com/JZXsakura/bank\-personnel\-system\-practice \-  репозиторий на GitHub
 
